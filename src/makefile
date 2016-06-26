@@ -8,5 +8,8 @@ Vector3.o: Vector3.cpp Vector3.h
 ONB.o: ONB.cpp ONB.h Vector3.h Vector3.cpp
 	g++ -c ONB.cpp -O2
 
+Triangle.o: Triangle.cpp Triangle.h Shape.h Vector3.h rgb.h Ray.h
+	g++ -c Triangle.cpp -O2
+
 clear:
 	rm *.o

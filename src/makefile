@@ -15,6 +15,12 @@ Triangle.o: Triangle.cpp Triangle.h Shape.h Vector3.h rgb.h Ray.h
 Sphere.o: Shape.h Sphere.cpp Sphere.h Vector3.h rgb.h Ray.h
 	g++ -c Sphere.cpp -O2
 
+Vector2.o: Vector2.cpp Vector2.h
+	g++ -c Vector2.cpp -O2
+
+Sample.o: Sample.cpp Sample.h
+	g++ -c Sample.cpp -O2
+
 main.exe: Vector3.h $(OBJECTS)
 	g++ main.cpp $(OBJECTS) -o main.exe -O2
 

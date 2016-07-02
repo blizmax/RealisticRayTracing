@@ -24,6 +24,9 @@ Sample.o: Sample.cpp Sample.h Vector2.cpp Vector2.h
 DynSphere.o: DynSphere.cpp DynSphere.h
 	g++ -c DynSphere.cpp -O2
 
+SolidNoise.o: SolidNoise.cpp SolidNoise.h
+	g++ -c SolidNoise.cpp -O2
+    
 main.exe: main.cpp $(OBJECTS) Camera.h
 	g++ main.cpp $(OBJECTS) -o main.exe -O2
 

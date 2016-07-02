@@ -1,5 +1,6 @@
 #include "Sample.h"
 #include "Vector2.h"
+#include "common.h"
 
 void random(Vector2* samples, int num_samples)
 {

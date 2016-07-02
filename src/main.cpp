@@ -1,6 +1,7 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
+#include "common.h"
 #include "Vector3.h"
 #include "rgb.h"
 #include "Image.h"

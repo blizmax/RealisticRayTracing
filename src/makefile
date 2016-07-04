@@ -26,6 +26,9 @@ DynSphere.o: DynSphere.cpp DynSphere.h
 
 SolidNoise.o: SolidNoise.cpp SolidNoise.h
 	g++ -c SolidNoise.cpp -O2
+
+NoiseTexture.o: NoiseTexture.cpp NoiseTexture.h Texture.h
+	g++ -c NoiseTexture.cpp -O2
     
 main.exe: main.cpp $(OBJECTS) Camera.h
 	g++ main.cpp $(OBJECTS) -o main.exe -O2

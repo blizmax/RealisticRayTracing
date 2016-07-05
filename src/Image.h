@@ -20,6 +20,10 @@ public:
 	void writePPM(ostream& out);
 	void readPPM(string file_name);
 
+	rgb getPixel(int x, int y) const;
+	int width() const { return nx; }
+	int height() const { return ny; }
+
 private:
 	rgb** raster;
 	int nx;

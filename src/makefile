@@ -29,6 +29,15 @@ SolidNoise.o: SolidNoise.cpp SolidNoise.h
 
 NoiseTexture.o: NoiseTexture.cpp NoiseTexture.h Texture.h
 	g++ -c NoiseTexture.cpp -O2
+
+MarbleTexture.o: MarbleTexture.cpp MarbleTexture.h
+	g++ -c MarbleTexture.cpp -O2
+
+ImageTexture.o: ImageTexture.cpp ImageTexture.h
+	g++ -c ImageTexture.cpp -O2
+
+UVSphere.o: UVSphere.cpp UVSphere.h
+	g++ -c UVSphere.cpp -O2
     
 main.exe: main.cpp $(OBJECTS) Camera.h
 	g++ main.cpp $(OBJECTS) -o main.exe -O2
